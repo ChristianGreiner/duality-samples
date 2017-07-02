@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ChristianGreiner.Duality.Samples.UfoGame</id>
+    <version>1.0.0</version>
+    <authors>Christian Greiner</authors>
+    <owners>Christian Greiner</owners>
+    <licenseUrl>https://raw.githubusercontent.com/ChristianGreiner/duality-samples/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ChristianGreiner/duality-samples</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ChristianGreiner/duality-samples/master/NuGetPackageSpecs/Icons/ufogame.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple Ufo Game for absolute beginners based on Unity's 2D UFO Tutorial</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Duality Sample Plugin Ufo Game</tags>
+    <dependencies>
+      <dependency id="AdamsLair.Duality" version="2.12.9" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\UfoGame\Source\Code\CorePlugin\bin\Debug\UfoGame.Sample.core.dll" target="lib" />
+    <file src="..\UfoGame\Data\**\*.res" target="content" />
+    <file src="..\UfoGame\Source\**\*.cs" target="source" exclude="..\..\UfoGame\Data\**\*.*;..\UfoGame\Source\Code\CorePlugin\obj\**\*.*" />
+    <file src="..\UfoGame\Source\Code\CorePlugin\CorePlugin.csproj" target="source" />
+  </files>
+</package>
