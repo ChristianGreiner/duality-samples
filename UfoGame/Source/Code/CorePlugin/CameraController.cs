@@ -28,7 +28,8 @@ namespace UfoGame
 
         public void OnUpdate()
         {
-            GameObj.Transform.Pos = player.Transform.Pos + offset;
+            if (player != null)
+                GameObj.Transform.Pos = player.Transform.Pos + offset;
         }
     }
 }
