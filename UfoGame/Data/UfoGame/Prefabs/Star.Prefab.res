@@ -34,31 +34,6 @@
           <vel dataType="Struct" type="Duality.Vector3" />
           <velAbs dataType="Struct" type="Duality.Vector3" />
         </item>
-        <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3880790028">
-          <active dataType="Bool">true</active>
-          <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-            <A dataType="Byte">255</A>
-            <B dataType="Byte">255</B>
-            <G dataType="Byte">255</G>
-            <R dataType="Byte">255</R>
-          </colorTint>
-          <customMat />
-          <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-          <gameobj dataType="ObjectRef">2238623460</gameobj>
-          <offset dataType="Int">0</offset>
-          <pixelGrid dataType="Bool">false</pixelGrid>
-          <rect dataType="Struct" type="Duality.Rect">
-            <H dataType="Float">37</H>
-            <W dataType="Float">38</W>
-            <X dataType="Float">-19</X>
-            <Y dataType="Float">-18.5</Y>
-          </rect>
-          <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-          <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-            <contentPath dataType="String">Data\Sprites\star.Material.res</contentPath>
-          </sharedMat>
-          <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
-        </item>
         <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="1006432688">
           <active dataType="Bool">true</active>
           <allowParent dataType="Bool">false</allowParent>
@@ -94,6 +69,31 @@
             <_size dataType="Int">1</_size>
           </shapes>
         </item>
+        <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3880790028">
+          <active dataType="Bool">true</active>
+          <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+            <A dataType="Byte">255</A>
+            <B dataType="Byte">255</B>
+            <G dataType="Byte">255</G>
+            <R dataType="Byte">255</R>
+          </colorTint>
+          <customMat />
+          <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
+          <gameobj dataType="ObjectRef">2238623460</gameobj>
+          <offset dataType="Int">0</offset>
+          <pixelGrid dataType="Bool">false</pixelGrid>
+          <rect dataType="Struct" type="Duality.Rect">
+            <H dataType="Float">37</H>
+            <W dataType="Float">38</W>
+            <X dataType="Float">-19</X>
+            <Y dataType="Float">-18.5</Y>
+          </rect>
+          <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+          <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+            <contentPath dataType="String">Data\UfoGame\Sprites\star.Material.res</contentPath>
+          </sharedMat>
+          <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
+        </item>
         <item dataType="Struct" type="UfoGame.Rotator" id="4015608035">
           <active dataType="Bool">true</active>
           <gameobj dataType="ObjectRef">2238623460</gameobj>
@@ -102,7 +102,7 @@
         <item dataType="Struct" type="UfoGame.Star" id="996487078">
           <active dataType="Bool">true</active>
           <collectSound dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
-            <contentPath dataType="String">Data\Sounds\Collect.Sound.res</contentPath>
+            <contentPath dataType="String">Data\UfoGame\Sounds\Collect.Sound.res</contentPath>
           </collectSound>
           <gameobj dataType="ObjectRef">2238623460</gameobj>
         </item>

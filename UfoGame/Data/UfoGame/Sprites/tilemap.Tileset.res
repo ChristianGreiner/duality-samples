@@ -32,7 +32,7 @@
         <id dataType="String">mainTex</id>
         <name dataType="String">Main Texture</name>
         <sourceData dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Pixmap]]">
-          <contentPath dataType="String">Data\Sprites\tilemap.Pixmap.res</contentPath>
+          <contentPath dataType="String">Data\UfoGame\Sprites\tilemap.Pixmap.res</contentPath>
         </sourceData>
         <sourceTileSize dataType="Struct" type="Duality.Point2">
           <X dataType="Int">70</X>

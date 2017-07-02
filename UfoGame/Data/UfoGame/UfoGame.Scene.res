@@ -35,10 +35,6 @@
             <vel dataType="Struct" type="Duality.Vector3" />
             <velAbs dataType="Struct" type="Duality.Vector3" />
           </item>
-          <item dataType="Struct" type="Duality.Components.SoundListener" id="2153215239">
-            <active dataType="Bool">true</active>
-            <gameobj dataType="ObjectRef">1499733868</gameobj>
-          </item>
           <item dataType="Struct" type="Duality.Components.Camera" id="2037009675">
             <active dataType="Bool">true</active>
             <farZ dataType="Float">10000</farZ>
@@ -71,12 +67,16 @@
             <perspective dataType="Enum" type="Duality.Drawing.PerspectiveMode" name="Parallax" value="1" />
             <visibilityMask dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="All" value="4294967295" />
           </item>
+          <item dataType="Struct" type="Duality.Components.SoundListener" id="2153215239">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">1499733868</gameobj>
+          </item>
           <item dataType="Struct" type="UfoGame.CameraController" id="3123779659">
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">1499733868</gameobj>
             <offset dataType="Struct" type="Duality.Vector3">
-              <X dataType="Float">65</X>
-              <Y dataType="Float">109</Y>
+              <X dataType="Float">0</X>
+              <Y dataType="Float">0</Y>
               <Z dataType="Float">-500</Z>
             </offset>
             <player dataType="Struct" type="Duality.GameObject" id="190153038">
@@ -100,31 +100,6 @@
                     <scaleAbs dataType="Float">1</scaleAbs>
                     <vel dataType="Struct" type="Duality.Vector3" />
                     <velAbs dataType="Struct" type="Duality.Vector3" />
-                  </item>
-                  <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1832319606">
-                    <active dataType="Bool">true</active>
-                    <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                      <A dataType="Byte">255</A>
-                      <B dataType="Byte">255</B>
-                      <G dataType="Byte">255</G>
-                      <R dataType="Byte">255</R>
-                    </colorTint>
-                    <customMat />
-                    <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                    <gameobj dataType="ObjectRef">190153038</gameobj>
-                    <offset dataType="Int">0</offset>
-                    <pixelGrid dataType="Bool">false</pixelGrid>
-                    <rect dataType="Struct" type="Duality.Rect">
-                      <H dataType="Float">91</H>
-                      <W dataType="Float">91</W>
-                      <X dataType="Float">-45.5</X>
-                      <Y dataType="Float">-45.5</Y>
-                    </rect>
-                    <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                    <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                      <contentPath dataType="String">Data\Sprites\ufo.Material.res</contentPath>
-                    </sharedMat>
-                    <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
                   </item>
                   <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3252929562">
                     <active dataType="Bool">true</active>
@@ -160,6 +135,31 @@
                       </_items>
                       <_size dataType="Int">1</_size>
                     </shapes>
+                  </item>
+                  <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1832319606">
+                    <active dataType="Bool">true</active>
+                    <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                      <A dataType="Byte">255</A>
+                      <B dataType="Byte">255</B>
+                      <G dataType="Byte">255</G>
+                      <R dataType="Byte">255</R>
+                    </colorTint>
+                    <customMat />
+                    <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
+                    <gameobj dataType="ObjectRef">190153038</gameobj>
+                    <offset dataType="Int">0</offset>
+                    <pixelGrid dataType="Bool">false</pixelGrid>
+                    <rect dataType="Struct" type="Duality.Rect">
+                      <H dataType="Float">91</H>
+                      <W dataType="Float">91</W>
+                      <X dataType="Float">-45.5</X>
+                      <Y dataType="Float">-45.5</Y>
+                    </rect>
+                    <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                    <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                      <contentPath dataType="String">Data\UfoGame\Sprites\ufo.Material.res</contentPath>
+                    </sharedMat>
+                    <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
                   </item>
                   <item dataType="Struct" type="UfoGame.Ufo" id="3276371992">
                     <active dataType="Bool">true</active>
@@ -299,7 +299,7 @@
                     </body>
                   </tileData>
                   <tileset dataType="Struct" type="Duality.ContentRef`1[[Duality.Plugins.Tilemaps.Tileset]]">
-                    <contentPath dataType="String">Data\Sprites\tilemap.Tileset.res</contentPath>
+                    <contentPath dataType="String">Data\UfoGame\Sprites\tilemap.Tileset.res</contentPath>
                   </tileset>
                 </item>
                 <item dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapRenderer" id="3532971954">
@@ -501,7 +501,7 @@
                           </body>
                         </tileData>
                         <tileset dataType="Struct" type="Duality.ContentRef`1[[Duality.Plugins.Tilemaps.Tileset]]">
-                          <contentPath dataType="String">Data\Sprites\tilemap.Tileset.res</contentPath>
+                          <contentPath dataType="String">Data\UfoGame\Sprites\tilemap.Tileset.res</contentPath>
                         </tileset>
                       </SourceTilemap>
                     </item>
@@ -584,11 +584,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">3703681886</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1050881158">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="2471491114">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">3703681886</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="2471491114">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1050881158">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">3703681886</gameobj>
                 </item>
@@ -653,7 +653,7 @@
               </changes>
               <obj dataType="ObjectRef">3703681886</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -666,11 +666,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1921154780</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3563321348">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="688964008">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1921154780</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="688964008">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3563321348">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1921154780</gameobj>
                 </item>
@@ -735,7 +735,7 @@
               </changes>
               <obj dataType="ObjectRef">1921154780</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -748,11 +748,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2488274161</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="4130440729">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="1256083389">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2488274161</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="1256083389">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="4130440729">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2488274161</gameobj>
                 </item>
@@ -817,7 +817,7 @@
               </changes>
               <obj dataType="ObjectRef">2488274161</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -830,11 +830,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">230778738</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1872945306">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3293555262">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">230778738</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3293555262">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1872945306">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">230778738</gameobj>
                 </item>
@@ -899,7 +899,7 @@
               </changes>
               <obj dataType="ObjectRef">230778738</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -912,11 +912,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1392345393</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3034511961">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="160154621">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1392345393</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="160154621">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3034511961">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1392345393</gameobj>
                 </item>
@@ -981,7 +981,7 @@
               </changes>
               <obj dataType="ObjectRef">1392345393</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -994,11 +994,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1156340954</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2798507522">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="4219117478">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1156340954</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="4219117478">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2798507522">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1156340954</gameobj>
                 </item>
@@ -1063,7 +1063,7 @@
               </changes>
               <obj dataType="ObjectRef">1156340954</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -1076,11 +1076,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">848772096</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2490938664">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3911548620">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">848772096</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3911548620">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2490938664">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">848772096</gameobj>
                 </item>
@@ -1145,7 +1145,7 @@
               </changes>
               <obj dataType="ObjectRef">848772096</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -1158,11 +1158,11 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2729018378</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="76217650">
+                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="1496827606">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2729018378</gameobj>
                 </item>
-                <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="1496827606">
+                <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="76217650">
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2729018378</gameobj>
                 </item>
@@ -1227,7 +1227,7 @@
               </changes>
               <obj dataType="ObjectRef">2729018378</obj>
               <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
-                <contentPath dataType="String">Data\Prefabs\Star.Prefab.res</contentPath>
+                <contentPath dataType="String">Data\UfoGame\Prefabs\Star.Prefab.res</contentPath>
               </prefab>
             </prefabLink>
           </item>
@@ -1267,7 +1267,7 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">2936198974</gameobj>
             <mainFont dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Font]]">
-              <contentPath dataType="String">Data\Fonts\OpenSans.Font.res</contentPath>
+              <contentPath dataType="String">Data\UfoGame\Fonts\OpenSans.Font.res</contentPath>
             </mainFont>
             <player dataType="ObjectRef">3276371992</player>
           </item>

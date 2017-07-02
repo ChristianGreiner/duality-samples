@@ -2,19 +2,22 @@
 <package >
   <metadata>
     <id>ChristianGreiner.Duality.Samples.UfoGame</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>Christian Greiner</authors>
     <owners>Christian Greiner</owners>
+    <title>Ufo Game Sample</title>
     <licenseUrl>https://raw.githubusercontent.com/ChristianGreiner/duality-samples/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ChristianGreiner/duality-samples</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/ChristianGreiner/duality-samples/master/NuGetPackageSpecs/Icons/ufogame.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple Ufo Game for absolute beginners based on Unity's 2D UFO Tutorial</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>#CHANGE Updated dependencies</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Duality Sample Plugin Ufo Game</tags>
     <dependencies>
       <dependency id="AdamsLair.Duality" version="2.12.9" />
+      <dependency id="AdamsLair.Duality.Plugins.Tilemaps" version="1.1.13" />
+      <dependency id="AdamsLair.Duality.Editor.Plugins.Tilemaps" version="1.1.18" />
     </dependencies>
   </metadata>
   <files>

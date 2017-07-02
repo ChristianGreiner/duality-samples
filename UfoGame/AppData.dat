@@ -10,9 +10,9 @@
   <soundDopplerFactor dataType="Float">1</soundDopplerFactor>
   <speedOfSound dataType="Float">360</speedOfSound>
   <startScene dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Scene]]">
-    <contentPath dataType="String">Data\GameScene.Scene.res</contentPath>
+    <contentPath dataType="String">Data\UfoGame\UfoGame.Scene.res</contentPath>
   </startScene>
-  <version dataType="UInt">37</version>
+  <version dataType="UInt">38</version>
   <websiteUrl dataType="String">https://github.com/ChristianGreiner/duality-samples</websiteUrl>
 </root>
 <!-- XmlFormatterBase Document Separator -->
