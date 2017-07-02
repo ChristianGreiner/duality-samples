@@ -1,6 +1,6 @@
 # Ufo Game
 
-A simple Ufo Game absolute beginners based on Unity's [2D UFO Tutorial](https://unity3d.com/de/learn/tutorials/projects/2d-ufo-tutorial)
+A simple Ufo Game for absolute beginners based on Unity's [2D UFO Tutorial](https://unity3d.com/de/learn/tutorials/projects/2d-ufo-tutorial)
 
 ### Run game
 
