@@ -24,7 +24,7 @@
   <files>
     <file src="..\UfoGame\Source\Code\CorePlugin\bin\Debug\UfoGame.Sample.core.dll" target="lib" />
     <file src="..\UfoGame\Data\**\*.res" target="content" />
-    <file src="..\UfoGame\Source\**\*.cs" target="source" exclude="..\..\UfoGame\Data\**\*.*;..\UfoGame\Source\Code\CorePlugin\obj\**\*.*" />
+    <file src="..\UfoGame\Source\Code\CorePlugin\**\*.cs" target="source" exclude="..\..\UfoGame\Data\**\*.*;..\UfoGame\Source\Code\CorePlugin\obj\**\*.*" />
     <file src="..\UfoGame\Source\Code\CorePlugin\CorePlugin.csproj" target="source" />
   </files>
 </package>
