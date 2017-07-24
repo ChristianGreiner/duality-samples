@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ChristianGreiner.Duality.Samples.UfoGame</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Christian Greiner</authors>
     <owners>Christian Greiner</owners>
     <title>Ufo Game Sample</title>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A simple game to show some basic features of Duality.</summary>
     <description>A simple Ufo Game for absolute beginners based on Unity's 2D UFO Tutorial.</description>
-    <releaseNotes>Added nuget summary</releaseNotes>
+    <releaseNotes>Package Spec Bugfix</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Duality Sample Plugin Ufo Game</tags>
     <dependencies>
