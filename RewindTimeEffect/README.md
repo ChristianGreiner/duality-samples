@@ -10,4 +10,4 @@ This is a tiny Project to show you how a simple [Rewind Time Effect](https://git
 
 ## Screenshots
 
-[![](https://i.imgur.com/Ue3iK1W.png)
+![](https://i.imgur.com/Ue3iK1W.png)
